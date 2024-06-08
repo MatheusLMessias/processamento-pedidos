@@ -1,6 +1,6 @@
 package com.pp.service;
 
-import com.pp.models.entitys.Request;
+import com.pp.models.entity.Request;
 import com.pp.repository.RequestRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;

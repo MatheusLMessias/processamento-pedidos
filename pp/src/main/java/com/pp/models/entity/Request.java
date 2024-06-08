@@ -1,4 +1,4 @@
-package com.pp.models.entitys;
+package com.pp.models.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
