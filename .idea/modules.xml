@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/pp/pp.iml" filepath="$PROJECT_DIR$/pp/pp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/processamento-pedidos.iml" filepath="$PROJECT_DIR$/.idea/processamento-pedidos.iml" />
+    </modules>
+  </component>
+</project>
