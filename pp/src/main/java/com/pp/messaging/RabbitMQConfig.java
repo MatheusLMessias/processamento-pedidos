@@ -1,4 +1,4 @@
-package com.pp.messaging.config;
+package com.pp.messaging;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;

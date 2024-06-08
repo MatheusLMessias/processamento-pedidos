@@ -1,4 +1,4 @@
-package com.pp.messaging.producer;
+package com.pp.messaging;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.pp.models.dto.ContentRequestDTO;
