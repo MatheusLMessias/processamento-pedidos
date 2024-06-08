@@ -16,7 +16,10 @@ public class MessagingService {
     @Transactional
     public Request saveRequest(Request request) {
         Double totalValue = request.getItens().stream()
-                .mapToDouble(item -> item.getValue() * item.getQuantity())
+                .mapToDouble(item -> {
+                    Double value = item.getValue();
+                    return value != null ? value * item.getQuantity() : 0.0;
+                })
                 .sum();
         request.setTotalValue(totalValue);
         return requestRepository.save(request);

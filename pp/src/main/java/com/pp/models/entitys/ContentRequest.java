@@ -19,4 +19,13 @@ public class ContentRequest {
     @ManyToOne
     @JoinColumn(name = "codeRequest")
     private Request request;
+
+    public ContentRequest(String product, int quantity, double value) {
+        this.product = product;
+        this.quantity = quantity;
+        this.value = value;
+    }
+
+    public ContentRequest() {
+    }
 }
