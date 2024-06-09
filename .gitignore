@@ -15,7 +15,6 @@ target/
 
 .DS_Store
 ### IntelliJ IDEA ###
-../.idea
 .idea/
 *.iws
 *.iml
