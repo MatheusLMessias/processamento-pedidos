@@ -3,7 +3,6 @@ package com.pp.controller;
 import com.pp.models.dto.RequestDTO;
 import com.pp.models.entity.Request;
 import com.pp.service.ApiService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,7 +13,6 @@ public class ApiController {
 
     private final ApiService apiService;
 
-    @Autowired
     public ApiController(ApiService apiService) {
         this.apiService = apiService;
     }

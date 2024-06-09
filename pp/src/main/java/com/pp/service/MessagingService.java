@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class MessagingService {
     private RequestRepository requestRepository;
-
     public MessagingService(RequestRepository requestRepository) {
         this.requestRepository = requestRepository;
     }
