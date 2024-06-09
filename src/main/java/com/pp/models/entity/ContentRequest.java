@@ -1,5 +1,6 @@
-package com.pp.models.entitys;
+package com.pp.models.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,6 +19,7 @@ public class ContentRequest {
 
     @ManyToOne
     @JoinColumn(name = "codeRequest")
+    @JsonBackReference
     private Request request;
 
     public ContentRequest(String product, int quantity, double value) {

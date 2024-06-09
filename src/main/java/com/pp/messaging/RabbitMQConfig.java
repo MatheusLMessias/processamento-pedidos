@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitMQConfig {
 
     @Bean
-    public Queue filaExemplo() {
+    public Queue queueRequest() {
         return new Queue("queue-requests", true);
     }
 }

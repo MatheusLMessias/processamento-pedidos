@@ -8,15 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="pp" />
+        <module name="processamento-pedidos" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="pp" target="17" />
+      <module name="processamento-pedidos" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="pp" options="-parameters" />
+      <module name="processamento-pedidos" options="-parameters" />
     </option>
   </component>
 </project>

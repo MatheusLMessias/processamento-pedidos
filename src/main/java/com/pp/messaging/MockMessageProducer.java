@@ -5,7 +5,6 @@ import com.pp.models.dto.ContentRequestDTO;
 import com.pp.models.dto.RequestDTO;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import jakarta.annotation.PostConstruct;
@@ -19,7 +18,6 @@ public class MockMessageProducer {
     private final Queue queue;
     private final ObjectMapper objectMapper;
 
-    @Autowired
     public MockMessageProducer(RabbitTemplate rabbitTemplate, Queue queue, ObjectMapper objectMapper) {
         this.rabbitTemplate = rabbitTemplate;
         this.queue = queue;
