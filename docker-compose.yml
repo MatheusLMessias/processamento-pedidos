@@ -18,14 +18,16 @@ services:
       MYSQL_PASSWORD: 123456
     ports:
       - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
   app:
-    image: matheusmessias/processamento-pedidos
+    image: matheusmessias/processamento-pedidos:1.0
     container_name: 'processamento-pedidos'
     ports:
       - "8080:8080"
     depends_on:
-      - rabbitmq
       - mysql
+      - rabbitmq
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-container:3306/pedidos
       SPRING_DATASOURCE_USERNAME: user
@@ -34,3 +36,6 @@ services:
       SPRING_RABBITMQ_PORT: 5672
       SPRING_RABBITMQ_USERNAME: guest
       SPRING_RABBITMQ_PASSWORD: guest
+
+volumes:
+  mysql-data:
