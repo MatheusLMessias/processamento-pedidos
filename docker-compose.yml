@@ -22,6 +22,8 @@ services:
       - mysql-data:/var/lib/mysql
   app:
     image: matheusmessias/processamento-pedidos:1.0
+    # For amd64 
+    # image: matheusmessias/processamento-pedidos:1.0-amd64
     container_name: 'processamento-pedidos'
     ports:
       - "8080:8080"
